@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">BDCoE</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Specials</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="stars.png" id="stars">
+        <img src="moon.png" id="moon">
+        <img src="mountains_behind.png" id="mountains_behind">
+        <h2 id="text">BIG DATA COE</h2>
+        <a href="#" class="btn" id="btn">Explore</a>
+        <img src="mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint maiores quidem vel quibusdam, repudiandae, atque repellendus in a reprehenderit distinctio quam, suscipit officiis facere laudantium praesentium consequuntur ullam. Eos dolores excepturi vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptates corporis facilis iure voluptas voluptate suscipit ex. Corporis neque nostrum enim, quidem quod dolore voluptas, sequi repellat praesentium laborum veritatis unde repellendus?<br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque provident maiores ipsa quos quo exercitationem necessitatibus voluptate autem ratione maxime similique recusandae dicta rerum excepturi nihil quae fugit, repudiandae eligendi id consectetur? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati aperiam nihil libero! Quibusdam est reprehenderit placeat! Illo nihil, explicabo, eius quam atque soluta ullam iure vel quis reiciendis asperiores sapiente facere nulla?<br><br>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolorum maxime delectus ut, deleniti mollitia accusantium laudantium. A expedita ullam itaque dolorem doloremque odio perspiciatis autem corrupti soluta. Reprehenderit excepturi exercitationem quo architecto. Architecto, voluptates, voluptate inventore perspiciatis tempore vitae sapiente nobis nulla sequi ea dolore, fugiat eligendi libero odit nisi cum fuga nesciunt? Sunt excepturi aliquid aut maxime reprehenderit nam saepe doloribus, tempora commodi possimus minima impedit natus ipsum itaque. Necessitatibus vero velit sed minima fugiat perferendis, hic neque quis repudiandae reprehenderit in nesciunt tenetur. Explicabo magnam vel dolores aliquam eius debitis cumque, exercitationem aut natus laudantium consequuntur unde?<br><br></p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint maiores quidem vel quibusdam, repudiandae, atque repellendus in a reprehenderit distinctio quam, suscipit officiis facere laudantium praesentium consequuntur ullam. Eos dolores excepturi vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptates corporis facilis iure voluptas voluptate suscipit ex. Corporis neque nostrum enim, quidem quod dolore voluptas, sequi repellat praesentium laborum veritatis unde repellendus?<br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque provident maiores ipsa quos quo exercitationem necessitatibus voluptate autem ratione maxime similique recusandae dicta rerum excepturi nihil quae fugit, repudiandae eligendi id consectetur? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati aperiam nihil libero! Quibusdam est reprehenderit placeat! Illo nihil, explicabo, eius quam atque soluta ullam iure vel quis reiciendis asperiores sapiente facere nulla?<br><br>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolorum maxime delectus ut, deleniti mollitia accusantium laudantium. A expedita ullam itaque dolorem doloremque odio perspiciatis autem corrupti soluta. Reprehenderit excepturi exercitationem quo architecto. Architecto, voluptates, voluptate inventore perspiciatis tempore vitae sapiente nobis nulla sequi ea dolore, fugiat eligendi libero odit nisi cum fuga nesciunt? Sunt excepturi aliquid aut maxime reprehenderit nam saepe doloribus, tempora commodi possimus minima impedit natus ipsum itaque. Necessitatibus vero velit sed minima fugiat perferendis, hic neque quis repudiandae reprehenderit in nesciunt tenetur. Explicabo magnam vel dolores aliquam eius debitis cumque, exercitationem aut natus laudantium consequuntur unde?<br><br></p>
+    </div>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value *0.25 + 'px'
+            moon.style.top = value *1.05 + 'px'
+            mountains_behind.style.top = value *0.5 + 'px'
+            mountains_front.style.top = value *0 + 'px'
+            text.style.marginRight = value *4 + 'px'
+            text.style.marginTop = value *1.5 + 'px'
+            btn.style.marginTop = value *1.5 + 'px'
+            header.style.top = value * 0.5 + 'px'
+        })
+    </script>
+</body>
+</html>
